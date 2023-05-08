@@ -15,6 +15,7 @@ com\portfolio\nv\Dto\dtoPersona.class
 com\portfolio\nv\Security\Dto\NuevoUsuario.class
 com\portfolio\nv\Service\ImpPersonaService.class
 com\portfolio\nv\Repository\IPersonaRepository.class
+com\portfolio\nv\WebConfig.class
 com\portfolio\nv\Controller\CExperiencia.class
 com\portfolio\nv\Security\Dto\JwtDto.class
 com\portfolio\nv\Security\MainSecurity.class
