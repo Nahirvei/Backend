@@ -40,6 +40,7 @@ public class Persona {
         this.img = img;
     }
 
+   
     public int getId() {
         return id;
     }
