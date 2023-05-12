@@ -6,6 +6,7 @@ import com.portfolio.nv.Entity.Persona;
 import com.portfolio.nv.Security.Controller.Mensaje;
 import com.portfolio.nv.Service.ImpPersonaService;
 import java.util.List;
+import java.util.Optional;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -33,6 +34,11 @@ public class PersonaController {
     public ResponseEntity<List<Persona>> list(){
         List<Persona> list = personaService.list();
         return new ResponseEntity(list, HttpStatus.OK);
+    }
+    @GetMapping("/traer-persona")
+    public ResponseEntity findPersona(){
+        Optional<Persona> myPers = personaService.getOne(1);
+        return new ResponseEntity(myPers, HttpStatus.OK);
     }
     
     @GetMapping("/detail/{id}")
